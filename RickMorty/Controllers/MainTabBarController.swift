@@ -17,7 +17,7 @@ final class MainTabBarController: UITabBarController {
     }
 
     private func setupTabBar(){
-        var viewControllers = [charactrController(),locationController(),episodController(),settingController()]
+        let viewControllers = [charactrController(),locationController(),episodController(),settingController()]
         for nav in viewControllers {
             nav.navigationBar.prefersLargeTitles = true
         }
