@@ -19,7 +19,7 @@ final class ApiServices {
     /// - Parameters:
     ///   - request: Requesr instance
     ///   - completion: Callback with data or error
-    public func excute(_ request: ApiRequest, completion: @escaping () -> Void){
+    public func excute<T: Codable>(_ request: ApiRequest,expecting type: T.Type, completion: @escaping (Result<T, Error>) -> Void){
         
         
     }
